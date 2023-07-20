@@ -46,4 +46,20 @@ from
  	student_age
 having # group by 이후의 조건 주기
 	total_score = 40;
-    
+
+# 행의 갯수
+select 
+	count(*)
+from 
+	student_tb
+where 
+	student_age = 20;
+
+# 쿼리문의 실행순서 : from - where - group by - select - having - order by
+select
+	* 
+from
+	student_tb
+order by
+	student_score desc,
+	student_id desc;
